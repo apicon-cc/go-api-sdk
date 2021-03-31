@@ -68,7 +68,7 @@ func (s *Service) Route() *gin.Engine {
 }
 
 func (s *Service) Run(addr ...string) {
-	var address string
+	address := ":8080"
 	if len(addr) != 0 {
 		address = addr[0]
 	}
